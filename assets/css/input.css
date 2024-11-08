@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menu {
+  @apply hidden absolute top-[100%] left-0 right-0 bg-gray-900 md:bg-transparent md:relative lg:relative w-full md:block md:w-auto;
+}
+
+.carousel-container {
+  @apply relative w-full h-[300px] md:h-[500px] lg:h-[700px] mb-8 lg:mb-10;
+}
+
+.card-carousel {
+  @apply bg-[rgba(0,38,92,0.5)] text-white px-5 py-8 w-96 mx-8  mt-10 md:px-8 md:py-16 md:w-[500px] lg:w-[600px] xl:w-[780px] xl:mr-24;
+}
+
+.card-soporte {
+  @apply max-w-sm bg-white border border-gray-200 rounded-lg shadow;
+}
