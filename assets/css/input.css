@@ -21,3 +21,7 @@
 .container-descripcion {
   @apply bg-[rgba(0,0,0,0.5)] w-[600px] md:w-[700px] xl:w-[800px] px-4 py-4 m-4 md:px-20 md:py-10 md:m-0 rounded-3xl backdrop-blur-xl outline outline-2 hover:shadow-2xl hover:shadow-[rgba(0,0,0,0.8)] outline-[rgba(0,0,0,0.5)] text-center;
 }
+
+.popular__card:hover img {
+  @apply -top-8;
+}

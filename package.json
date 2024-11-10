@@ -10,12 +10,18 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@vesp/nuxt-fontawesome": "^1.1.0",
     "flowbite": "^2.5.2",
     "nuxt": "^3.14.159",
+    "scrollreveal": "^4.0.9",
+    "swiper": "^11.1.14",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@nuxtjs/tailwindcss": "^6.12.2"
   }
 }
