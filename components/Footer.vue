@@ -25,21 +25,21 @@
         <div
           class="absolute top-0 -translate-y-1/2 left-0 right-0 max-w-36 mx-auto"
         >
-          <div class="bg-blue-700 text-lg text-center space-x-2">
+          <div class="bg-blue-500 text-lg text-center space-x-2">
             <FontAwesome
-              class="text-white hover:text-blue-500 duration-300 cursor-pointer"
+              class="text-white hover:text-blue-600 duration-300 cursor-pointer"
               :icon="['fab', 'instagram-square']"
             />
             <FontAwesome
-              class="text-white hover:text-blue-500 duration-300 cursor-pointer"
+              class="text-white hover:text-blue-600 duration-300 cursor-pointer"
               :icon="['fab', 'facebook-square']"
             />
             <FontAwesome
-              class="text-white hover:text-blue-500 duration-300 cursor-pointer"
+              class="text-white hover:text-blue-600 duration-300 cursor-pointer"
               :icon="['fab', 'youtube']"
             />
             <FontAwesome
-              class="text-white hover:text-blue-500 duration-300 cursor-pointer"
+              class="text-white hover:text-blue-600 duration-300 cursor-pointer"
               :icon="['fab', 'linkedin']"
             />
           </div>
