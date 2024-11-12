@@ -31,15 +31,15 @@ import("scrollreveal").then((ScrollReveal) => {
   const scroll = ScrollReveal.default({
     origin: "top",
     distance: "50px",
-    duration: 2500,
-    delay: 300,
+    duration: 1500,
+    delay: 150,
     reset: true,
   });
 
   // Configuración para revelar elementos con intervalos
-  scroll.reveal(".review__top, .review__swiper");
-  scroll.reveal(".review__leaf", { delay: 1000, origin: "left" });
-  scroll.reveal(".swiper-slide", { interval: 100 }); // Efecto de caída secuencial para las tarjetas
+  scroll.reveal(".testimonios__top, .titulo__productos");
+  scroll.reveal(".titulo__productos", { delay: 100, origin: "top" });
+  scroll.reveal(".productos__card, .testimonios__swiper", { interval: 120 }); // Efecto de caída secuencial para las tarjetas
 });
 
 onBeforeUnmount(() => {
