@@ -1,11 +1,7 @@
 <template>
   <section id="testimonios" class="relative overflow-hidden pt-28 pb-56">
-    <div
-      class="testimonios__top flex flex-col items-center gap-3 text-center mb-20"
-    >
-      <h3
-        class="text-center lg:text-start text-2xl md:text-3xl lg:text-4xl font-bold"
-      >
+    <div class="testimonios__top container gap-3 text-center mb-20">
+      <h3 class="lg:text-start text-2xl md:text-3xl lg:text-4xl font-bold">
         Testimonios
       </h3>
     </div>
@@ -16,7 +12,7 @@
         :space-between="30"
         :autoplay="{ delay: 3000, disableOnInteraction: false }"
         :breakpoints="breakpoints"
-        pagination
+        :pagination="{ clickable: true }"
         grab-cursor
       >
         <SwiperSlide v-for="(review, index) in reviews" :key="index">
@@ -36,7 +32,6 @@
           </div>
         </SwiperSlide>
       </Swiper>
-      <div class="swiper-pagination"></div>
     </div>
   </section>
 </template>
