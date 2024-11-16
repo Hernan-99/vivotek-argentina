@@ -57,7 +57,7 @@
             </li>
             <li>
               <NuxtLink
-                to="/"
+                to="/productos"
                 class="block py-2 px-3 md:p-0"
                 aria-current="page"
                 >Productos</NuxtLink
@@ -65,7 +65,7 @@
             </li>
             <li>
               <NuxtLink
-                to="/"
+                to="/donde_comprar"
                 class="block py-2 px-3 md:p-0"
                 aria-current="page"
                 >¿Donde comprar?</NuxtLink
