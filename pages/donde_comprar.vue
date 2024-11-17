@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="hero -mt-28 md:-mt-32 relative">
+    <!-- <div class="hero -mt-28 md:-mt-32 relative">
       <img
         class="w-full h-[700px]"
         src="https://blob.vivotek.com/downloadfile/VMSGenetec/genetec_f1.jpg"
@@ -17,7 +17,12 @@
           Distribuidor Vivotek en Argentina
         </h3>
       </div>
-    </div>
+    </div> -->
+    <Hero
+      :img="'https://blob.vivotek.com/downloadfile/VMSGenetec/genetec_f1.jpg'"
+      titulo="¿Donde comprar nuestros productos?"
+      subtitulo="Distribuidor Vivotek en Argentina"
+    />
 
     <section class="container text-center mb-20">
       <h2 class="text-4xl mb-8">
