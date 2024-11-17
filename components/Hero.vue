@@ -1,9 +1,24 @@
 <template>
-  <h1>Hero</h1>
+  <div class="hero -mt-28 md:-mt-32 relative">
+    <img class="w-full h-[700px]" :src="img" alt="" />
+    <div class="bg-black absolute top-0 w-full h-full opacity-60 bg"></div>
+    <div
+      class="absolute top-0 w-full h-full flex flex-col justify-center items-center"
+    >
+      <h1 class="text-center text-6xl text-white mb-8">
+        {{ titulo }}
+      </h1>
+      <h3 class="text-center text-3xl text-white">
+        {{ subtitulo }}
+      </h3>
+    </div>
+  </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+defineProps({
+  img: "",
+  titulo: "",
+  subtitulo: "",
+});
 </script>
-
-<style></style>
