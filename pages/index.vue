@@ -49,6 +49,27 @@ useHead({
       content:
         "Somos vivotek argentina, distribuidores directos de Cámaras de seguridad, CCVT, IP, Domos y mucho más. Brindamos seguridad a traves de nuestros productos, soporte 24/7, instalaciones y asesoramiento. Contactanos para cotizar presupuestos",
     },
+    {
+      property: "og:title",
+      content: "Vivotek - Argentina",
+    },
+    {
+      property: "og:description",
+      content:
+        "Cámaras de seguridad, soporte 24/7, y más. Cambia tu equipo Vivotek por uno de última generación.",
+    },
+    {
+      property: "og:image",
+      content: "url_de_imagen.jpg",
+    },
+    {
+      property: "og:url",
+      content: "https://tu-sitio.com",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
   ],
 });
 </script>
