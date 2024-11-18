@@ -40,3 +40,15 @@
     <CardTestimonios />
   </div>
 </template>
+<script setup>
+useHead({
+  title: "Vivotek - Argentina",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Somos vivotek argentina, distribuidores directos de Cámaras de seguridad, CCVT, IP, Domos y mucho más. Brindamos seguridad a traves de nuestros productos, soporte 24/7, instalaciones y asesoramiento. Contactanos para cotizar presupuestos",
+    },
+  ],
+});
+</script>
