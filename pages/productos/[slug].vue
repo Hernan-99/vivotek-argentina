@@ -1,34 +1,51 @@
 <template>
-  <section class="producto-detalle mb-96">
-    <div v-if="item" class="container">
-      <h1 class="text-center text-2xl font-bold">Titulo: {{ item.tipo }}</h1>
+  <section v-if="item" class="producto-detalle mb-96">
+    <Hero
+      :img="'https://customvideosecurity.com/media/wysiwyg/homepage-header-80.jpg'"
+      :titulo="item.tipo"
+      subtitulo="Nuestros modelos disponibles"
+    />
+    <!-- <div v-if="item" class="flex p-8"> -->
+    <div class="flex p-8">
+      <!-- <h3 class="text-6xl font-bold mb-20">{{ item.tipo }}</h3> -->
 
-      <div v-if="item && item.modelos && item.modelos.length > 0">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 gap-10"
+        v-if="item && item.modelos && item.modelos.length > 0"
+      >
         <div
           v-for="modelo in item.modelos"
           :key="modelo.id"
-          class="mb-20 w-full"
+          class="mb-20 w-[600px]"
         >
-          <h4 class="text-6xl">{{ modelo.nombre }}</h4>
-          <img :src="modelo.img" alt="" />
-          <h3 class="text-3xl">Características principales:</h3>
-          <ul class="mb-20 list-disc">
-            <li
-              class=""
-              v-for="(value, key) in modelo.caracteristicas_principales"
-              :key="key"
-            >
-              {{ value }}
-            </li>
-          </ul>
-          <!-- <NuxtLink
-            :to="modelo.especificaciones_tecnicas.data_pdf"
-            class="bg-blue-500 px-8 py-3 rounded-md text-white"
-            >Ver ficha tecnica</NuxtLink
+          <div class="card border p-8 shadow-md">
+            <div class="header">
+              <h1 class="text-2xl font-bold">Cámara {{ modelo.nombre }}</h1>
+              <img class="mb-4" :src="modelo.img" alt="" />
+            </div>
+            <div class="body">
+              <h3 class="text-xl">Características principales:</h3>
+              <ul class="list-disc p-5">
+                <li
+                  class=""
+                  v-for="(value, key) in modelo.caracteristicas_principales"
+                  :key="key"
+                >
+                  {{ value }}
+                </li>
+              </ul>
+              <NuxtLink
+                to=""
+                class="bg-blue-500 px-8 py-3 rounded-md text-white"
+                >Ver ficha tecnica</NuxtLink
+              >
+              <!-- <NuxtLink
+          :to="modelo.especificaciones_tecnicas.data_pdf"
+          class="bg-blue-500 px-8 py-3 rounded-md text-white"
+          >Ver ficha tecnica</NuxtLink
           > -->
-          <NuxtLink to="" class="bg-blue-500 px-8 py-3 rounded-md text-white"
-            >Ver ficha tecnica</NuxtLink
-          >
+            </div>
+          </div>
         </div>
       </div>
     </div>

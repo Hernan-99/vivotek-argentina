@@ -1,10 +1,15 @@
 <template>
   <section class="mb-96">
-    <div
+    <Hero
+      :img="heroImg"
+      titulo="Conoce todos nuestros productos"
+      subtitulo="Vivotek - Argentina"
+    />
+    <!-- <div
       class="hero bg-[url('~/assets/images/hero-productos.png')] object-cover h-full py-20 -mt-28 md:-mt-32 relative"
     >
       <div class="bg-black absolute top-0 w-full h-full opacity-60"></div>
-    </div>
+    </div> -->
     <article class="container">
       <h1
         class="text-center lg:text-start text-2xl md:text-3xl lg:text-4xl font-bold mb-28 lg:mb-28 py-10"
@@ -50,7 +55,8 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import heroImg from "~/assets/images/hero-productos.png";
+import { ref } from "vue";
 const productos = ref({});
 const url = "https://json-data-vivotek.vercel.app/data.json";
 
