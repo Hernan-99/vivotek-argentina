@@ -1,6 +1,5 @@
 <template>
   <section class="py-20" id="productos">
-    <!-- <div class="bg-[url('~/assets/images/LinePattern.png')] object-cover h-full py-20"> -->
     <div class="container titulo__productos">
       <h3
         class="text-center lg:text-start text-2xl md:text-3xl lg:text-4xl font-bold mb-28 lg:mb-28 py-10"
